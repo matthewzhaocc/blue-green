@@ -30,13 +30,14 @@ func init() {
 }
 func main() {
 	if FindEnvColor() == GREEN {
-		// applying green environment manifest
+		// applying blue environment manifest
 		log.Println("applying *blue* environment")
 		err := ApplyManifest(BLUE)
 		if common.CheckError(err) {
 			log.Println(err.Error())
 		}
-	} else if FindEnvColor() == BLUE{
+	} else if FindEnvColor() == BLUE {
+		// applying the green environment manifest
 		log.Println("applying *green* environment")
 		err := ApplyManifest(GREEN)
 		if common.CheckError(err) {
