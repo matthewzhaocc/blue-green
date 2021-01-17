@@ -16,7 +16,7 @@ const (
 )
 // ApplyManifest applies the manifest of the environment
 func ApplyManifest(color string) error {
-	command := "apply -f " + color + "-env.yml"
+	command := "apply -f " + color + "-vsvc.yml"
 	cmd := exec.Command("kubectl", command)
 	return cmd.Run()
 }

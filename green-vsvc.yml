@@ -6,7 +6,7 @@ spec:
   gateways:
   - bg-gateway
   hosts:
-  - "test.local"
+  - "*"
   http:
   - name: primary
     route:
